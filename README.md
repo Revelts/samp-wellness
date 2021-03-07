@@ -42,12 +42,32 @@ Include in your code and begin using the library:
 
 ## Usage
 
-<!--
-Write your code documentation or examples here. If your library is documented in
-the source code, direct users there. If not, list your API and describe it well
-in this section. If your library is passive and has no API, simply omit this
-section.
--->
+```
+SetPlayerHunger(playerid, Float:amount, count);
+SetPlayerEnergy(playerid, Float:amount, count);
+
+Amount = The amount you want in float data!
+Count :
+True = it will count from the total amount
+False = it will set totally the wellness
+```
+
+```
+GetPlayerHunger(playerid) To get the amount of player hunger in Float
+GetPlayerEnergy(playerid) To get the amount of player energy in Float
+
+SetPlayerHungryTrigger(playerid, Float:amount) To set the trigger when player will hungry
+SetPlayerThirstyTrigger(playerid, Float:amount) To set the trigger when player will thirsty
+NB : Amount = FLOAT DATA!
+
+SetHungerReduceAmount(Float:amount) to set the amount how much it will reduce the hunger
+SetEnergyReduceAmount(Float:amount) to set the amount how much it will reduce the energy
+
+GetHungerReduceAmount() to get the amount of hunger reduce / second
+GetEnergyReduceAmount() to get the amount of energy reduce / second
+
+OnPlayerUpdateWellness(playerid) to check when the player update their wellness! you can do everything you want here
+```
 
 ## Testing
 
