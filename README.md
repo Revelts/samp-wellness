@@ -59,13 +59,17 @@ GetPlayerEnergy(playerid) To get the amount of player energy in Float
 SetPlayerHungryTrigger(playerid, Float:amount) To set the trigger when player will hungry
 SetPlayerThirstyTrigger(playerid, Float:amount) To set the trigger when player will thirsty
 NB : Amount = FLOAT DATA!
+```
 
+```
 SetHungerReduceAmount(Float:amount) to set the amount how much it will reduce the hunger
 SetEnergyReduceAmount(Float:amount) to set the amount how much it will reduce the energy
 
 GetHungerReduceAmount() to get the amount of hunger reduce / second
 GetEnergyReduceAmount() to get the amount of energy reduce / second
+```
 
+```
 OnPlayerUpdateWellness(playerid) to check when the player update their wellness! you can do everything you want here
 ```
 
