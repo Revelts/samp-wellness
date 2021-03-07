@@ -1,0 +1,12 @@
+{
+	"user": "Revelt",
+	"repo": "samp-wellness",
+	"entry": "samp-wellness.pwn",
+	"output": "samp-wellness.amx",
+	"dependencies": [
+		"sampctl/samp-stdlib"
+	],
+	"runtime": {
+		"mode": "y_testing"
+	}
+}
