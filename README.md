@@ -120,7 +120,7 @@ IsPlayerHungry(playerid)
 IsPlayerThirsty(playerid)
 ```
 
-- Callback when player update their wellness, reminder this callback will always triggered every 1 second!
+- Callback when player update their wellness, reminder this callback always called every 1 second!
 
 ```
 OnPlayerUpdateWellness(playerid) to check when the player update their wellness! you can do everything you want here
