@@ -42,32 +42,85 @@ Include in your code and begin using the library:
 
 ## Usage
 
-```
-SetPlayerHunger(playerid, Float:amount, count);
-SetPlayerEnergy(playerid, Float:amount, count);
+- Update your server hunger reduce amount for every player
 
-Amount = The amount you want in float data!
-Count :
+```c
+SetHungerReduceAmount(Float:amount)
+```
+
+- Update your server hunger reduce amount for every player
+
+```c
+SetEnergyReduceAmount(Float:amount)
+```
+
+- This is to set player's hunger
+Float:amount = The amount you want in float data!
+count : true / false
 True = it will count from the total amount
 False = it will set totally the wellness
+```c
+SetPlayerHunger(playerid, Float:amount, count);
 ```
 
+- This is to set player's energy
+Float:amount = The amount you want in float data!
+count : true / false
+True = it will count from the total amount
+False = it will set totally the wellness
+```c
+SetPlayerEnergy(playerid, Float:amount, count);
 ```
+
+- This is for get player's hunger in float amount!
+
+```c
 GetPlayerHunger(playerid) To get the amount of player hunger in Float
+```
+
+- This is for get player's energy in float amount!
+
+```c
 GetPlayerEnergy(playerid) To get the amount of player energy in Float
-
-SetPlayerHungryTrigger(playerid, Float:amount) To set the trigger when player will hungry
-SetPlayerThirstyTrigger(playerid, Float:amount) To set the trigger when player will thirsty
-NB : Amount = FLOAT DATA!
 ```
 
-```
-SetHungerReduceAmount(Float:amount) to set the amount how much it will reduce the hunger
-SetEnergyReduceAmount(Float:amount) to set the amount how much it will reduce the energy
+- This is for set player's hunger when they will become hungry!
 
+```c
+SetPlayerHungryTrigger(playerid, Float:amount)
+```
+
+- This is for set player's hunger when they will become hungry!
+
+```c
+SetPlayerThirstyTrigger(playerid, Float:amount)
+```
+
+- This is to get global hunger reduce amount!
+
+```c
 GetHungerReduceAmount() to get the amount of hunger reduce / second
+```
+
+- This is to get global energy reduce amount!
+
+```c
 GetEnergyReduceAmount() to get the amount of energy reduce / second
 ```
+
+- This is to check if player's hunger or not!
+
+```c
+IsPlayerHungry(playerid)
+```
+
+- This is to check if player's thirsty or not!
+
+```c
+IsPlayerThirsty(playerid)
+```
+
+- Callback when player update their wellness, reminder this callback will always triggered every 1 second!
 
 ```
 OnPlayerUpdateWellness(playerid) to check when the player update their wellness! you can do everything you want here
