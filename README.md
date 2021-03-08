@@ -54,6 +54,7 @@ SetHungerReduceAmount(Float:amount)
 SetEnergyReduceAmount(Float:amount)
 ```
 
+### Functions
 - This is to set player's hunger
 Float:amount = The amount you want in float data!
 count : true / false
@@ -119,8 +120,8 @@ IsPlayerHungry(playerid)
 ```c
 IsPlayerThirsty(playerid)
 ```
-
-- Callback when player update their wellness, reminder this callback always called every 1 second!
+### Callback
+- when player update their wellness, reminder this callback always called every 1 second!
 
 ```
 OnPlayerUpdateWellness(playerid) to check when the player update their wellness! you can do everything you want here
