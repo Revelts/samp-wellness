@@ -13,9 +13,9 @@
 #include <a_samp>
 
 // Variables
-new
-    HungerReduceAmount = 0.5,
-    EnergyReduceAmount = 0.5    
+static
+    Float:HungerReduceAmount = 0.5,
+    Float:EnergyReduceAmount = 0.5    
 ;
 
 enum E_BODY_WELLNESS
@@ -26,7 +26,7 @@ enum E_BODY_WELLNESS
     Float:Thristy
 };
 
-new BodyWellness[MAX_PLAYERS][E_BODY_WELLNESS];
+static BodyWellness[MAX_PLAYERS][E_BODY_WELLNESS];
 
 //Function Prototype
 forward OnPlayerUpdateWellness(playerid);
